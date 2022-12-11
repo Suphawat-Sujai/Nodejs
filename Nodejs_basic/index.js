@@ -1,5 +1,5 @@
-const name = "suphawat"
-console.log(name)
-
-const x = 15+5
-console.log(x) 
+console.log("start download")
+setTimeout(() =>{
+    console.log("downloading")
+},3000) //ดีเลย์ 3 วินาที
+console.log("finally download")
