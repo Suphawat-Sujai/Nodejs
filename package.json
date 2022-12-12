@@ -1,7 +1,7 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "description": "test nodejs for beginner",
+  "description": " test nodejs for brginner",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/Suphawat-Sujai/Nodejs.git"
   },
-  "author": "suphawat",
+  "author": "suphawat sujai",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Suphawat-Sujai/Nodejs/issues"
