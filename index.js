@@ -2,7 +2,6 @@ const http = require('http')
 const fs = require('fs')
 
 const indexpage = fs.readFileSync(`${__dirname}/webpages/index.html`)
-
 const server = http.createServer(function (req, res){
     const pathname = req.url
     console.log("url = ",pathname)
