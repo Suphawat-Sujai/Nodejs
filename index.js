@@ -1,7 +1,10 @@
 const http = require('http')
 const fs = require('fs')
 
-const indexpage = fs.readFileSync(`${__dirname}/webpages/index.html`)
+const checkinpage = fs.readFileSync(`${__dirname}/webpages/Checkin.html`,'uft-8')
+const contactpage = fs.readFileSync(`${__dirname}/webpages/Contact.html`,'uft-8')
+const loginpage = fs.readFileSync(`${__dirname}/webpages/login.html`,'uft-8')
+
 const server = http.createServer(function (req, res){
     const pathname = req.url
     console.log("url = ",pathname)
