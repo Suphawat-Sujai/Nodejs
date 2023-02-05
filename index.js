@@ -1,6 +1,5 @@
 const http = require('http')
 const fs = require('fs')
-const url = request('url')
 
 const checkinpage = fs.readFileSync(`${__dirname}/webpages/Checkin.html`,'uft-8')
 const contactpage = fs.readFileSync(`${__dirname}/webpages/Contact.html`,'uft-8')
