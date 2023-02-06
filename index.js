@@ -1,45 +1,12 @@
+//ใช้าำหรับสั่ง run server ขึ้นมา
 const express = require('express')
+const router = require('./Router/my_router')
 const app = express() //ใช้งาน express
 
-app.use((req,res) =>{
-    res.send("Hello world")
-})
+app.use(router) //ทำหน้าที่อื่น เเต่เปลั้นยนรเเปลงคำสั่งใช้ router เเทน
 
 app.listen(8080,() =>{//กำหนดพอต
     console.log("listening on at port 8080")
-
 })
 
 
-// const http = require('http')
-// const fs = require('fs')
-
-// const checkinpage = fs.readFileSync(`${__dirname}/webpages/Checkin.html`,'uft-8')
-// const contactpage = fs.readFileSync(`${__dirname}/webpages/Contact.html`,'uft-8')
-// const loginpage = fs.readFileSync(`${__dirname}/webpages/login.html`,'uft-8')
-
-// const server = http.createServer(function (req, res){
-
-//     console.log(url.parse(req.url,true))
-//     const pathname = req.url
-//     console.log("url = ",pathname)
-//     if(pathname === "/" || pathname === "/main"){
-//         const myhtml =`
-//         <h1>Hello world</h1>
-//         <p style = "color:green" >By suphawat sujai</p>`
-//         res.end(indexpage)
-//     }else if(pathname === "/product"){
-//         res.end("<h1>Hello Products</h1>")
-//     }else{
-//         res.writeHead(404)
-//         res.end("<h1>Not Found</h1>")
-//     }
-        
-
-   
-    
-// })
-
-// server.listen(3000,'localhost',()=>{
-//     console.log("Started server on port 3000")
-// })
