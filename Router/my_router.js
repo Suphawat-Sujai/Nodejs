@@ -14,10 +14,10 @@ router.get("/",(req,res) =>{ //พาทเริ่มต้น fiel checkin
     res.sendFile(path.join(__dirname,"../webpages/Checkin.html")) //ส่งข้อมูลไปยังไฟล์ที่อ้างอิงตำเเหน่งไว้
 })
 
-router.get("/contact",(req,res) =>{ //พาทเริ่มต้น file contect
-     res.status(200)
-     res.type('text/html')
-     res.sendFile(path.join(__dirname,"../webpages/Contact.html")) //ส่งข้อมูลไปยังไฟล์ที่อ้างอิงตำเเหน่งไว้
+router.get("/contact",(req,res) =>{ //พาทเริ่มต้น file contect  
+    //  res.status(200)
+    //  res.type('text/html')
+    //  res.sendFile(path.join(__dirname,"../webpages/Contact.html")) //ส่งข้อมูลไปยังไฟล์ที่อ้างอิงตำเเหน่งไว้
  })
 
 router.get("/login",(req,res) =>{ //พาทเริ่มต้น file login
