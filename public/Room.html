@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hotel</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-large">
+  
+  <a href="#refresh" class="w3-bar-item w3-button w3-blue-gray w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Hotel Inside Management</a>
+  <a href="#refresh" class="w3-bar-item w3-button w3-gray w3-mobile"><i></i>Login</a>
+  <!--<a href="#rooms" class="w3-bar-item w3-button w3-mobile">Check In</a>
+  <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a> -->
+  <a href="#contact" class="w3-bar-item w3-button w3-right w3-blue-gray w3-mobile">LogOut</a></a>
+  <a href="#contact" class="w3-bar-item w3-button w3-right w3-white w3-mobile"></a></a>
+  <a href="#contact" class="w3-bar-item w3-button w3-right w3-gray w3-mobile">Contact</a></a>
+  <a href="#contact" class="w3-bar-item w3-button w3-right w3-gray w3-mobile">Offers</a></a>
+  
+  <a href="#contact" class="w3-bar-item w3-button w3-right w3-gray w3-mobile">Room&Suites</a></a>
+</div>
+<!-- Header -->
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1532px;">
+
+  <div class="w3-container w3-margin-top" id="rooms">
+    <h2>CHECK OUT</h2>
+  </div>
+  <br>
+  
+    
+    <!-- <div class="w3-center m-lg-7">
+      <button type="button" class="btn btn-success btn-lg ">Large button</button>
+    </div> -->
+
+<!-- Footer -->
+<footer class="w3-padding-35 w3-black w3-center w3-margin-top">
+  
+  <p>Powered by <a href="" target="_blank" class="w3-hover-text-green"> Suphawat Sujai</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
