@@ -21,13 +21,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <div class="w3-bar w3-white w3-large">
   
   <a href="#refresh" class="w3-bar-item w3-button w3-blue-gray w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Hotel Inside Management</a>
+  <a href="#refresh" class="w3-bar-item w3-button w3-gray w3-mobile"><i></i>Login</a>
   <!--<a href="#rooms" class="w3-bar-item w3-button w3-mobile">Check In</a>
   <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
   <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a> -->
   <a href="#contact" class="w3-bar-item w3-button w3-right w3-blue-gray w3-mobile">LogOut</a></a>
   <a href="#contact" class="w3-bar-item w3-button w3-right w3-white w3-mobile"></a></a>
   <a href="#contact" class="w3-bar-item w3-button w3-right w3-gray w3-mobile">Contact</a></a>
-  <a href="#contact" class="w3-bar-item w3-button w3-right w3-gray w3-mobile">About</a></a>
+  <a href="#contact" class="w3-bar-item w3-button w3-right w3-gray w3-mobile">Offers</a></a>
+  
+  <a href="#contact" class="w3-bar-item w3-button w3-right w3-gray w3-mobile">Room&Suites</a></a>
 </div>
 <!-- Header -->
 
@@ -36,105 +39,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <div class="w3-content" style="max-width:1532px;">
 
   <div class="w3-container w3-margin-top" id="rooms">
-    <h2>CHECK IN</h2>
+    <h2>CHECK OUT</h2>
   </div>
   <br>
   
-  <div class="w3-row-padding">
-    <div class="w3-col m3">
-      <label><i></i> Name</label>
-      <input class="w3-input w3-border" type="text" placeholder="Please save the information.">
-    </div>
-    <div class="w3-col m3">
-      <label></i> ID/Passport </i></label>
-      <input class="w3-input w3-border" type="text" placeholder="Please save the information.">
-    </div>
-    <div class="w3-col m3">
-      <label></i> Telephone Number</label>
-      <input class="w3-input w3-border" type="text" placeholder="Please save the information.">
-    </div>
-    <div class="w3-col m3">
-      <label><i class="fa fa-male"></i> Number Of People</label>
-      <input class="w3-input w3-border" type="number" placeholder="Please save the information.">
-    </div>
-    <div class="w3-col m3">
-      <label><i ></i> Check In</label>
-      <input  class="w3-input w3-border" type="date" name="CheckInDate" id="" class="form-control" required>
-    </div>
-    <div class="w3-col m3">
-      <label><i></i> Check Out</label>
-      <input  class="w3-input w3-border" type="date" name="CheckInDate" id="" class="form-control" required>
-    </div>
-
-  </div>
-  <!-- single room -->
-  <div class="w3-row-padding w3-padding-16">
-    <div class="w3-third w3-margin-bottom">
-      <img src="https://www.hotelmonterey.co.jp/upload_file/monhtyo/stay/sng_600_001.jpg" alt="Norway" style="width:100%">
-      <div class="w3-container w3-white">
-        <h3>Single Room</h3>
-        <h5 >Price $50</h5>
-        <p>Single bed</p>
-        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"> </i> <i class="fa fa-tv"></i></p>
-        
-        <div class="w3-col m7">
-          <label><i></i> Number Of Room</label>
-          <input class="w3-input w3-border" type="number" placeholder="Please save the information.">
-        </div>
-
-        <div class="w3-col m7">
-          <label><i></i> Additional Request</label>
-          <textarea name="message" style="width:380px; height:100px;" placeholder="Please save the information."></textarea>
-        </div>
-        
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
-      </div>
-    </div>
-
-    <!-- double room -->
-    <div class="w3-third w3-margin-bottom">
-      <img src="https://www.collinsdictionary.com/images/full/doubleroom_564885484_1000.jpg" alt="Norway" style="width:94%">
-      <div class="w3-container w3-white">
-        <h3>Double Room</h3>
-        <h5> Price $75 </h5>
-        <p>Queen-size bed</p>
-        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
-        <div class="w3-col m7">
-          <label><i></i> Number Of Room</label>
-          <input class="w3-input w3-border" type="number" placeholder="Please save the information.">
-        </div>
-
-        <div class="w3-col m7">
-          <label><i></i> Additional Request</label>
-          <textarea name="message" style="width:380px; height:100px;" placeholder="Please save the information."></textarea>
-        </div>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
-      </div>
-    </div>
-
-    <!-- deluxe room -->
-    <div class="w3-third w3-margin-bottom">
-      <img src="https://cdn.traveltripper.io/site-assets/512_863_12597/media/2018-02-22-041437/large_DDBDB.jpg" alt="Norway" style="width:94%">
-      <div class="w3-container w3-white">
-        <h3>Deluxe Room</h3>
-        <h5>Price $199</h5>
-        <p>King-size bed</p>
-        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
-        <div class="w3-col m7">
-          <label><i></i> Number Of Room</label>
-          <input class="w3-input w3-border" type="number" placeholder="Please save the information.">
-        </div>
-
-        <div class="w3-col m7">
-          <label><i></i> Additional Request</label>
-          <textarea name="message" style="width:380px; height:100px;" placeholder="Please save the information."></textarea>
-        </div>
-        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
-      </div>
-    </div>
-  </div>
-
-</div>
     
     <!-- <div class="w3-center m-lg-7">
       <button type="button" class="btn btn-success btn-lg ">Large button</button>
